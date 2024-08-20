@@ -7,3 +7,7 @@ video2:
 ref1: 
   location: 21/001
   type: internal
+pdf:
+  title: Lecture notes
+  location: slides/slides_theory.pdf
+  type: internal

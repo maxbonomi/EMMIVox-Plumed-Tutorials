@@ -53,9 +53,9 @@ The flow chart shown below indicates the order in which you should consult the r
 
 ```mermaid
 flowchart TB;
-  A[PLUMED syntax] -.-> C[Lecture I] 
-  B[Installation] ==> D[Tutorial 1]
-  C ==> D[Tutorial 1];
+  A[PLUMED syntax] -.-> D[Tutorial 1];
+  B[Installation] ==> D[Tutorial 1];
+  C[Lecture I] ==> D[Tutorial 1];
   D ==> E[Tutorial 2];
   E ==> F[Lecture II];
   click A "ref1" "This lesson teaches you the basic features of the PLUMED input syntax with a particular focus on PBCs and selection tools";

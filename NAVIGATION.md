@@ -42,10 +42,10 @@ We will simulate the system using the CHARMM36m force field in explicit TIP3P wa
 </p>
 
 
-## Single-structure refinement with EMMIVox
+## Tutorial 1: Single-structure refinement with EMMIVox
 The first tutorial to perform single-structure refinement with EMMIVox can be accessed [here](01.md).
 
-## Ensemble refinement with EMMIVox
+## Tutorial 2: Ensemble refinement with EMMIVox
 The second tutorial to perform ensemble refinement with EMMIVox can be accessed [here](02.md).
 
 ## Flowchart

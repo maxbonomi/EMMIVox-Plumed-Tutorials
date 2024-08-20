@@ -26,10 +26,9 @@ The data needed to complete the tutorials can be found [here](https://github.com
 git clone https://github.com/maxbonomi/EMMIVox-Plumed-Tutorials.git  
 ````
 
-This repository contains the following 3 directories:
+This repository contains the following 2 directories:
 * `scripts`: python scripts used for preprocessing and analysis of EMMIVox simulations
 * `tutorials`: complete tutorials for single-structure and ensemble refinement
-* `slides`: a brief presentation of the EMMIVox theory
 
 The system under study is a Tau filament resolved at 1.9 Angstrom by the Scheres group
  ([PDB 7P6A](https://www.rcsb.org/structure/7P6A), [EMD 13223](https://www.ebi.ac.uk/emdb/EMD-13223)). The system is composed by 5 identical chains, for a total of 8335 solute atoms.
@@ -66,5 +65,5 @@ flowchart TB;
   click D "01.md" "First tutorial to perform single-structure refinement with EMMIVox";
   click E "02.md" "Second tutorial to perform ensemble refinement with EMMIVox";
   click F "video2" "A lecture that was given on December 5th 2022 as part of the PLUMED masterclass series that goes through the solutions to the exercises in the lesson";
-  click G "slides/slides_theory.pdf" "Slides of the theoretical lecture";
+  click G "slides_theory.pdf" "Slides of the theoretical lecture";
 ```

@@ -64,6 +64,10 @@ This repository is organized in the following two directories:
 
 ## Overview of the system
 
+<p align="center">
+  <img src="tau.png" width="400">
+</p>
+
 The system under study is a Tau filament resolved at 1.9 Angstrom by the Scheres group
  ([PDB 7P6A](https://www.rcsb.org/structure/7P6A), [EMD 13223](https://www.ebi.ac.uk/emdb/EMD-13223)). The system is composed by 5 identical chains, for a total of 8335 solute atoms.
 We will simulate the system using the CHARMM36m force field in explicit TIP3P water, for a total of 40958 atoms. The reference is:

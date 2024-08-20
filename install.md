@@ -31,8 +31,6 @@ You can create a conda environment to install all the python libraries needed to
 
    Make sure you are installing MDAnalysis version >= 2.0.0.
 
-  `conda install -c simpleitk simpleitk`
-
 * In this environment, you also need to install `pytorch` using the instructions available [here](https://pytorch.org).
   Make sure you select a version compatible with the Cuda version installed on your machine or alternatively the CPU version.
   These instructions are for pytorch version 1.13.0 with Cuda 11.6:

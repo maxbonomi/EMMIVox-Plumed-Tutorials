@@ -1,3 +1,11 @@
+## Hardware requirements
+
+To complete this tutorial you need:
+
+ * A Linux workstation with a multi-core CPU (6-8 cores should be enough);
+ * For ensemble modelling, access to a Linux cluster is preferable;
+ * a GPU to accelerate both the Molecular Dynamics simulation and the calculation of the cryo-EM restraint.
+
 ## Software requirements
 
  Make sure you have installed:
@@ -7,7 +15,9 @@
  * Cuda, needed by both GROMACS and PLUMED. The exact version depends a bit on how old your GPUs are.
  * [LibTorch](https://pytorch.org/get-started/locally/). Make sure you download the C++ version (LibTorch, not pytorch) that is supported by the Cuda version you installed; 
  * [Phenix](https://phenix-online.org/documentation/index.html) (any recent version), if you want to validate single-structure refinement. Not really needed for ensemble modelling.
- * Conda to install the python libraries needed by the pre- and post-processing scripts. See next section.
+ * [Conda](https://www.anaconda.com) to install the python libraries needed by the pre- and post-processing scripts: see installation instructions below.
+ * [GROMACS](https://www.gromacs.org) and [PLUMED](https://www.plumed.org): see installation instructions below.
+ * UCSF [Chimera](https://www.cgl.ucsf.edu/chimera/download.html) or [ChimeraX](https://www.cgl.ucsf.edu/chimerax/) to visualize structural models and cryo-EM density maps.
 
 ## Setting up the Conda environment for pre/post-processing scripts
 

@@ -15,8 +15,8 @@ The EMMIVox approach is described in the following publication:
 S. E. Hoff, F. E. Thomasen, K. Lindorff-Larsen, M. Bonomi. Accurate model and ensemble refinement using cryo-electron microscopy maps and Bayesian inference.
 PLoS Comput. Biol. 20 (2024) e1012180. doi: [10.1371/journal.pcbi.1012180](https://doi.org/10.1371/journal.pcbi.1012180).
 
-## [Installation instructions](install.md)
-Prerequisites and guide to install the software to perform EMMIVox simulations.
+## Installation instructions
+Prerequisites and guide to install the software to perform EMMIVox simulations can be found [here](install.md).
 
 ## Resources
 
@@ -42,14 +42,13 @@ We will simulate the system using the CHARMM36m force field in explicit TIP3P wa
 </p>
 
 
-## [Single-structure refinement with EMMIVox](01.md)
-First tutorial to perform single-structure refinement with EMMIVox
+## Single-structure refinement with EMMIVox
+The first tutorial to perform single-structure refinement with EMMIVox can be accessed [here](01.md).
 
-## [Ensemble refinement with EMMIVox](02.md)
-Second tutorial to perform ensemble refinement with EMMIVox
+## Ensemble refinement with EMMIVox
+The second tutorial to perform ensemble refinement with EMMIVox can be accessed [here](02.md).
 
 ## Flowchart
-
 The flow chart shown below indicates the order in which you should consult the resources.  You can click on the nodes to access the various resources.  Follow the thick black lines for the best results.  The resources that are connected by dashed lines are supplementary resources that you may find useful when completing the exercise. 
 
 ```mermaid

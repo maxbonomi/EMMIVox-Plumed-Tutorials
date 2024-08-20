@@ -54,8 +54,10 @@ The flow chart shown below indicates the order in which you should consult the r
 ```mermaid
 flowchart TB;
   A[PLUMED syntax] -.-> D[Tutorial 1];
-  B[Installation] ==> D[Tutorial 1];
-  C[Lecture I] ==> D[Tutorial 1];
+  B[Installation] ==> D;
+  C[Lecture I] ==> D;
+  C -.-> G[Lecture notes];
+  G -.-> D;
   D ==> E[Tutorial 2];
   E ==> F[Lecture II];
   click A "ref1" "This lesson teaches you the basic features of the PLUMED input syntax with a particular focus on PBCs and selection tools";
@@ -64,4 +66,5 @@ flowchart TB;
   click D "01.md" "First tutorial to perform single-structure refinement with EMMIVox";
   click E "02.md" "Second tutorial to perform ensemble refinement with EMMIVox";
   click F "video2" "A lecture that was given on December 5th 2022 as part of the PLUMED masterclass series that goes through the solutions to the exercises in the lesson";
+  click G "slides/slides_theory.pdf" "Slides of the theoretical lecture";
 ```

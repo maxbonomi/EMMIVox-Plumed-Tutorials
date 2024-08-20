@@ -1,15 +1,12 @@
 # Single-structure and ensemble refinement with cryo-EM maps and EMMIVox
 
-## Origin
+## Aims
 
+The aim of this tutorial is to learn how to use PLUMED to perform single-structure and ensemble refinement using cryo-EM maps and EMMIVox.
 This lesson was given as part of the PLUMED masterclass series in 2022. It includes:
 
 * A video that explain the theory covered and a second video which shows you how the exercises should be completed.
 * Two tutorials that you should try to complete yourself.
-
-## Aims
-
-The aim of this tutorial is to learn how to use PLUMED to perform single-structure and ensemble refinement using cryo-EM maps and EMMIVox.
 
 ## Overview of the theory 
 
@@ -23,21 +20,26 @@ Prerequisites and guide to install the software to perform EMMIVox simulations.
 
 ## Resources
 
-This repository is organized in the following two directories:
+The data needed to complete the tutorials can be found [here](https://github.com/maxbonomi/EMMIVox-Plumed-Tutorials). You can clone this repository locally on your machine using the following command:
+
+````
+git clone https://github.com/maxbonomi/EMMIVox-Plumed-Tutorials.git  
+````
+
+This repository contains the following 3 directories:
 * `scripts`: python scripts used for preprocessing and analysis of EMMIVox simulations
 * `tutorials`: complete tutorials for single-structure and ensemble refinement
-
-## Overview of the system
-
-<p align="center">
-  <img src="tau.png" width="400">
-</p>
+* `slides`: a brief presentation of the EMMIVox theory
 
 The system under study is a Tau filament resolved at 1.9 Angstrom by the Scheres group
  ([PDB 7P6A](https://www.rcsb.org/structure/7P6A), [EMD 13223](https://www.ebi.ac.uk/emdb/EMD-13223)). The system is composed by 5 identical chains, for a total of 8335 solute atoms.
 We will simulate the system using the CHARMM36m force field in explicit TIP3P water, for a total of 40958 atoms. The reference is:
 
 [Shi, Y., Zhang, W., Yang, Y. et al. Structure-based classification of tauopathies. Nature 598, 359–363 (2021)](https://doi.org/10.1038/s41586-021-03911-7)
+
+<p align="center">
+  <img src="tau.png" width="400">
+</p>
 
 
 ## [Single-structure refinement with EMMIVox](01.md)

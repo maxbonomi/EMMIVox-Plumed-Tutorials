@@ -66,5 +66,5 @@ flowchart TB;
   click D "01.md" "First tutorial to perform single-structure refinement with EMMIVox";
   click E "02.md" "Second tutorial to perform ensemble refinement with EMMIVox";
   click F "video2" "A lecture that was given on December 5th 2022 as part of the PLUMED masterclass series that goes through the solutions to the exercises in the lesson";
-  click G "data/slides/slides_theory.pdf" "Slides of the theoretical lecture";
+  click G "slides/slides_theory.pdf" "Slides of the theoretical lecture";
 ```

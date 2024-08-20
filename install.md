@@ -6,8 +6,29 @@
  * MPI library/compilers for multi-replica ensemble simulations.
  * Cuda, needed by both GROMACS and PLUMED. The exact version depends a bit on how old your GPUs are.
  * [LibTorch](https://pytorch.org/get-started/locally/). Make sure you download the C++ version (LibTorch, not pytorch) that is supported by the Cuda version you installed; 
- * Conda to install the python libraries needed by the pre- and post-processing scripts. Have a look [here](https://github.com/cosblab/EMMIVox/tree/main/scripts) for more info about the libraries that you need to install.
  * [Phenix](https://phenix-online.org/documentation/index.html) (any recent version), if you want to validate single-structure refinement. Not really needed for ensemble modelling.
+ * Conda to install the python libraries needed by the pre- and post-processing scripts. See next section.
+
+## Setting up the Conda environment for pre/post-processing scripts
+
+You can create a conda environment to install all the python libraries needed to run pre- and post-processing tools.
+
+* `conda create --name emmivox`
+
+* `conda activate emmivox`
+
+* `conda install -c conda-forge mrcfile mdanalysis biopython`
+
+   Make sure you are installing MDAnalysis version >= 2.0.0.
+
+  `conda install -c simpleitk simpleitk`
+
+* In this environment, you also need to install `pytorch` using the instructions available [here](https://pytorch.org).
+  Make sure you select a version compatible with the Cuda version installed on your machine or alternatively the CPU version.
+  These instructions are for pytorch version 1.13.0 with Cuda 11.6:
+
+  `conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia`
+
 
 ## PLUMED installation
 

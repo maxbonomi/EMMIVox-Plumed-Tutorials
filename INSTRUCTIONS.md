@@ -22,7 +22,7 @@ The EMMIVox approach is described in the following publication:
 S. E. Hoff, F. E. Thomasen, K. Lindorff-Larsen, M. Bonomi. Accurate model and ensemble refinement using cryo-electron microscopy maps and Bayesian inference.
 PLoS Comput. Biol. 20 (2024) e1012180. doi: [10.1371/journal.pcbi.1012180](https://doi.org/10.1371/journal.pcbi.1012180).
 
-## **Software requirements**
+## Software requirements
 
  Make sure you have installed:
 
@@ -30,10 +30,10 @@ PLoS Comput. Biol. 20 (2024) e1012180. doi: [10.1371/journal.pcbi.1012180](https
  * MPI library/compilers for multi-replica ensemble simulations.
  * Cuda, needed by both GROMACS and PLUMED. The exact version depends a bit on how old your GPUs are.
  * [LibTorch](https://pytorch.org/get-started/locally/). Make sure you download the C++ version (LibTorch, not pytorch) that is supported by the Cuda version you installed; 
- * Conda to install the python libraries needed by the pre- and post-processing scripts. Have a look [here](https://github.com/maxbonomi/EMMIVox/tree/main/scripts) for more info about the libraries that you need to install.
+ * Conda to install the python libraries needed by the pre- and post-processing scripts. Have a look [here](https://github.com/cosblab/EMMIVox/tree/main/scripts) for more info about the libraries that you need to install.
  * [Phenix](https://phenix-online.org/documentation/index.html) (any recent version), if you want to validate single-structure refinement. Not really needed for ensemble modelling.
 
-## **PLUMED installation**
+## PLUMED installation
 
 ### 1. Getting PLUMED
 
@@ -52,7 +52,7 @@ The main point is to enable Libtorch with:
 
 `./configure --enable-libtorch`
 
-## **GROMACS installation**
+## GROMACS installation
 
 Detailed instructions about patching GROMACS with PLUMED, configuration and installation are available [here](https://www.plumed.org/doc-master/user-doc/html/_installation.html).
 
@@ -90,7 +90,7 @@ Each step of the procedure will be carried out in a separate directory.
 
    * Add to the index file created by CHARMM-GUI (`index.ndx`) two custom groups:
 
-     * `System-MAP`, which contains all the atoms that will be used to generate the cryo-EM map. You can do this with `make_ndx.py` in [`scripts`](https://github.com/maxbonomi/EMMIVox/tree/main/scripts) using [`MDAnalysis`](https://www.mdanalysis.org) selection syntax. Hydrogen atoms and the carboxylate oxygens of glutamic/aspartic acid will be automatically removed from this group, as they are not used in PLUMED to calculate the cryo-EM map. A second group, called `System-MAP-H` will also be created to include these missing atoms (mostly to write them in the trajectory file).
+     * `System-MAP`, which contains all the atoms that will be used to generate the cryo-EM map. You can do this with `make_ndx.py` in `scripts` using [`MDAnalysis`](https://www.mdanalysis.org) selection syntax. Hydrogen atoms and the carboxylate oxygens of glutamic/aspartic acid will be automatically removed from this group, as they are not used in PLUMED to calculate the cryo-EM map. A second group, called `System-MAP-H` will also be created to include these missing atoms (mostly to write them in the trajectory file).
 
         `python make_ndx.py step3_input.gro "protein" System-MAP --ndx index.ndx`
        
@@ -234,7 +234,7 @@ We need to prepare the system with an energy minimization and equilibration at r
    **Working directory**: `5-Analysis`
 
 
-# Exercise 2: ensemble refinement with EMMIVox 
+# Exercise 2: ensemble refinement with EMMIVox
 
 These are the steps to do ensemble modelling using a cryo-EM map and EMMIVox.
 Each step of the procedure will be carried out in a separate directory.

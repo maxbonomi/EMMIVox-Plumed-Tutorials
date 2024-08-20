@@ -53,7 +53,7 @@ The flow chart shown below indicates the order in which you should consult the r
 ```mermaid
 flowchart TB;
   A[PLUMED syntax] -.-> C[Lecture I] 
-  B[Installation] ==> C[Lecture I]
+  B[Installation] ==> D[Tutorial 1]
   C ==> D[Tutorial 1];
   D ==> E[Tutorial 2];
   E ==> F[Lecture II];

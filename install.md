@@ -60,3 +60,5 @@ The main point is to enable Libtorch with:
 ## GROMACS installation
 
 Detailed instructions about patching GROMACS with PLUMED, configuration and installation are available [here](https://www.plumed.org/doc-master/user-doc/html/_installation.html).
+
+##### [Back to EMMIVox home](NAVIGATION.md)
